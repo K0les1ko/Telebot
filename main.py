@@ -12,6 +12,8 @@ def handle_start(message):
     bot.send_message(message.chat.id, "Привет! Я бот. Отправь мне текст, и я его повторю.")
 
 # Обработчик всех текстовых сообщений
+
+""" kakayato dich"""
 @bot.message_handler(func=lambda message: True)
 def handle_text(message):
     bot.send_message(message.chat.id, f"Вы сказали: {message.text}")
